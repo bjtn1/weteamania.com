@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+
+<body class="p-2">
+  <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+    <!-- Teamania logo img and company name -->
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="" class="flex items-center space-x-1">
+        <!-- TODO resize teamania's logo -->
+        <img class="h-8" src="../assets/teamania_logo2.png" alt="Teamania Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap">Teamania</span>
+      </a>
+
+      <!-- Hamburger menu button -->
+      <button id="menu-toggle" class="block md:hidden p-2 text-gray-600 rounded-lg hover:bg-gray-200">
+        <span class="sr-only">Open main menu</span>
+          <!-- TODO animate this icon into an X after clicking on it -->
+        <div class="ham-menu-icon inline-block w-6 h-6">
+          <div class="bar1 h-1 bg-gray-500 my-1 rounded-md duration-300 ease-in-out"></div>
+          <div class="bar2 h-1 bg-gray-500 my-1 rounded-md duration-300 ease-in-out"></div>
+          <div class="bar3 h-1 bg-gray-500 my-1 rounded-md duration-300 ease-in-out"></div>
+        </div>
+      </button>
+
+      <!-- Menu items -->
+      <ul id="menu"
+        class="hidden md:flex md:space-x-4 space-y-2 md:space-y-0 mt-4 md:mt-0 font-medium border-t md:border-none pt-4 md:pt-0">
+        <li>
+          <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Menu</a>
+        </li>
+        <li>
+          <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Deals</a>
+        </li>
+        <li>
+          <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Order</a>
+        </li>
+        <li>
+          <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- TODO make Hamburger menu items look good LMAO -->
+    <!-- <ul id="ham-menu-items" -->
+    <!--   class="md:hidden md:flex md:space-x-4 space-y-2 md:space-y-0 mt-4 md:mt-0 font-medium border-t md:border-none pt-4 md:pt-0"> -->
+    <!--   <li> -->
+    <!--     <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Menu</a> -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!--     <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Deals</a> -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!--     <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Order</a> -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!--     <a href="#" class="block px-3 py-2 rounded-md text-gray-900 hover:bg-gray-200">Contact</a> -->
+    <!--   </li> -->
+    <!-- </ul> -->
+  </nav>
+</body>
+
+</html>
