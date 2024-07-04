@@ -604,6 +604,14 @@ video {
   top: 0px;
 }
 
+.start-0 {
+  inset-inline-start: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -642,6 +650,18 @@ video {
   width: 1.75rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -675,6 +695,10 @@ video {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .bg-black {
