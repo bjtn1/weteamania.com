@@ -9,17 +9,26 @@
 </head>
 
 <body class="p-2">
-  <div class="flex justify-between p-2 border-b">
+  <!-- this relative shit might be an issue later idk -->
+  <div class="flex justify-between p-2 border-b overflow-hidden">
     <div class="flex space-x-2">
       <img alt="logo" src="../assets/teamania_logo.png" class="h-8" />
       <span class="text-2xl font-semibold">Teamania</span>
     </div>
 
-    <button class="inline-block" onclick="animate_ham_menu_icon(this)">
+    <!-- Hamburger button -->
+    <button class="inline-block" onclick="animate_ham_menu_icon(this); show_nav_items()">
       <div class="bar1 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
       <div class="bar2 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
       <div class="bar3 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
     </button>
+  </div>
+
+  <!-- Nav menu items -->
+  <div id="nav-items" class="hidden">
+    <a href="" class="border-y text-center block py-3 px-4 text-7xl hover:bg-gray-200 rounded-md duration-300 ease-in-out">Menu</a>
+    <a href="" class="border-y text-center block py-3 px-4 text-7xl hover:bg-gray-200 rounded-md duration-300 ease-in-out">Deals</a>
+    <a href="" class="border-y text-center block py-3 px-4 text-7xl hover:bg-gray-200 rounded-md duration-300 ease-in-out">Contact</a>
   </div>
 
   <h1>hey</h1>
