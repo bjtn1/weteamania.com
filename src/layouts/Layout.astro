@@ -23,7 +23,7 @@ const { title } = Astro.props;
 		 			- skill issues
 		-->
     <div
-      class="sticky top-0 mx-auto w-full max-w-[1024px] flex-col overflow-hidden border-b bg-white p-2"
+      class="sticky top-0 z-50 mx-auto w-full max-w-[1024px] flex-col overflow-hidden rounded-b-3xl border-b bg-white p-2"
     >
       <div class="sticky top-0 flex flex-wrap justify-between bg-white p-2">
         <div class="flex space-x-2">
@@ -209,6 +209,8 @@ const { title } = Astro.props;
     );
   }
   html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
     font-family: system-ui, sans-serif;
   }
   code {
