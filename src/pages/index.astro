@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Teamania.">
+	<main>
+			<!-- Navbar -->
+			<!-- TODO y navbar not sticky on small devices?-->
+			<div class="bg-white flex-col p-2 border-b overflow-hidden top-0 w-full sticky">
+				<div class="bg-white flex flex-wrap justify-between p-2 top-0 sticky">
+					<div class="flex space-x-2">
+						<img alt="logo" src="/teamania_logo3.png" class="h-8" />
+						<span class="text-2xl font-semibold">Teamania</span>
+					</div>
+		
+					<!-- Hamburger button -->
+					<button class="inline-block" onclick="animate_ham_menu_icon(this); show_nav_items()">
+						<div class="bar1 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
+						<div class="bar2 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
+						<div class="bar3 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
+					</button>
+				</div>
+		
+				<!-- Nav menu items -->
+				<!-- TODO animate this shit so it looks cool -->
+				<div id="nav-items" class="hidden">
+					<a href="" class="border-y text-center block py-3 px-4 text-7xl hover:bg-gray-200 duration-300 ease-in-out">Contact us</a>
+					<a href="" class="text-center block py-3 px-4 text-7xl hover:bg-gray-200 duration-300 ease-in-out">Deals</a>
+					<a href="" class="border-y text-center block py-3 px-4 text-7xl hover:bg-gray-200  duration-300 ease-in-out">Menu</a>
+				</div>
+			</div>
+		
+		
+			<!-- the menu -->
+			<h1>1hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+			<h1>hheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyeyheyheyhyehyehyehyehheyhyehyeyheyheyhyehyheyheyh</h1>
+	</main>
+	<script is:inline>function animate_ham_menu_icon(x) {
+		x.classList.toggle("change");
+	}
+	
+	function show_nav_items() {
+		let x = document.getElementById("nav-items");
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+	}
+	
+	// hamburger menu thingie toggle
+	// document.addEventListener("DOMContentLoaded", function () {
+	//   const menuToggle = document.getElementById("menu-toggle");
+	//   const menu = document.getElementById("ham-menu");
+	//
+	//   menuToggle.addEventListener("click", function () {
+	//     menu.classList.toggle("hidden");
+	//   });
+	// });
+	</script>
+</Layout>
+
+<style>
+.change .bar1 {
+  transform: translate(0, 5px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+</style>
