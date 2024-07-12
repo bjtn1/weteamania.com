@@ -12,12 +12,102 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content="Welcome to Teamania" />
-		<link rel="icon" type="image/png" href="/teamania_logo.png" />
+		<link rel="icon" type="image/png" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="px-2">
-		<slot />
+	<body>
+		<!-- TODO: separate Navbar & its logic into its own component -->
+		<!-- Navbar -->
+		<!-- TODO y navbar not sticky on small devices? 
+		 			- skill issues
+		-->
+		<div class="bg-white flex-col p-2 border-b overflow-hidden top-0 w-full sticky max-w-[1024px] mx-auto">
+			<div class="bg-white flex flex-wrap justify-between p-2 top-0 sticky">
+				<div class="flex space-x-2">
+					<img alt="logo" src="/teamania_logo.svg" class="h-8" />
+					<span class="text-2xl font-semibold">Teamania</span>
+				</div>
+
+				<!-- Hamburger button -->
+				<button class="inline-block" onclick="animate_ham_menu_icon(this); show_nav_items()">
+					<div class="bar1 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
+					<div class="bar2 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
+					<div class="bar3 w-7 h-1 bg-black my-1 mx-0 rounded-full duration-300"></div>
+				</button>
+			</div>
+
+			<!-- Nav menu items -->
+			<!-- TODO animate this shit so it looks cool -->
+			<div id="nav-items" class="hidden">
+				<a href="" class="border-y text-center block py-3 px-4 text-7xl hover:bg-gray-200 duration-300 ease-in-out">Contact us</a>
+				<a href="" class="text-center block py-3 px-4 text-7xl hover:bg-gray-200 duration-300 ease-in-out">Deals</a>
+				<a href="" class="border-y text-center block py-3 px-4 text-7xl hover:bg-gray-200  duration-300 ease-in-out">Menu</a>
+			</div>
+		</div>
+		<script is:inline>
+			function animate_ham_menu_icon(x) {
+				x.classList.toggle("change");
+			}
+			
+			function show_nav_items() {
+				let x = document.getElementById("nav-items");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+			
+			// hamburger menu thingie toggle
+			// document.addEventListener("DOMContentLoaded", function () {
+			//   const menuToggle = document.getElementById("menu-toggle");
+			//   const menu = document.getElementById("ham-menu");
+			//
+			//   menuToggle.addEventListener("click", function () {
+			//     menu.classList.toggle("hidden");
+			//   });
+			// });
+		</script>
+		<main>
+			<slot />
+		</main>
+		<!-- TODO: separate into its own component -->
+		<footer class="max-w-[1024px] relative overflow-hidden mx-auto min-h-96 border border-neutral-300 rounded-3xl my-12 grid grid-cols-3 p-12">
+			<div class="flex flex-col gap-3">
+				<h1 class="font-serif text-3xl">Teamania</h1>
+				<span class="text-neutral-500 text-sm">
+					130 Rollins Ave Suite B, <br/>
+					Rockville, Maryland
+					<br/>
+					<br/>
+					1-240-669-9198
+				</span>
+				<p class="text-neutral-500 text-sm">
+					&copy; 2024
+				</p>
+			</div>
+			<div class="flex flex-col gap-3">
+				<b class="text-lg font-semibold font-serif text-neutral-500">Sitemap</b>
+				<a href="" class="block">Home</a>
+				<a href="" class="block">Menu</a>
+				<a href="" class="block">Location</a>
+				<a href="" class="block">Contact us</a>
+			</div>
+			<div class="flex flex-col gap-3">
+				<b class="text-lg font-semibold font-serif text-neutral-500">Socials</b>
+				<a href="" class="block">Facebook</a>
+				<a href="" class="block">Instagram</a>
+			</div>
+			<svg class="absolute -bottom-24 -right-24 [mask-image:linear-gradient(-45deg,red,transparent)] stroke-neutral-500 h-[110%]" viewBox="0 0 669 669" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<mask id="mask0_3_74" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="669" height="669">
+				<circle cx="334.5" cy="334.5" r="334.219" fill="white"/>
+				</mask>
+				<g mask="url(#mask0_3_74)">
+				<path d="M416.198 409.672L163.677 662.193M609.302 112.589L111.688 610.203M163.677 7.70837L661.292 505.323M505.323 8.60937L7.70837 506.224M7.70843 163.677L505.323 661.292M557.313 60.599L59.698 558.214M111.688 59.698L609.302 557.313M661.292 164.578L408.771 417.099M59.698 111.688L557.313 609.302" stroke-width="3"/>
+				</g>
+				</svg>
+		</footer>
 	</body>
 </html>
 <style is:global>
@@ -46,4 +136,19 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+
+	/* navbar stuff */
+	/* TODO: separate into its own component */
+	.change .bar1 {
+		transform: translate(0, 5px) rotate(-45deg);
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+		transform: translate(0, -11px) rotate(45deg);
+	}
+
 </style>
