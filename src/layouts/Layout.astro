@@ -103,7 +103,7 @@ const { title } = Astro.props;
     </main>
     <!-- TODO: separate into its own component -->
     <footer
-      class="relative mx-auto my-12 grid min-h-96 max-w-[1024px] grid-cols-3 overflow-hidden rounded-3xl border border-neutral-300 p-12"
+      class="relative mx-auto grid min-h-96 max-w-[1024px] grid-cols-2 gap-12 overflow-hidden rounded-b-none rounded-t-3xl border border-neutral-300 p-12 md:my-12 md:grid-cols-3 md:rounded-b-3xl"
     >
       <div class="flex flex-col gap-3">
         <h1 class="font-serif text-3xl">Teamania</h1>
@@ -116,20 +116,26 @@ const { title } = Astro.props;
         </span>
         <p class="text-sm text-neutral-500">&copy; 2024</p>
       </div>
-      <div class="flex flex-col gap-3">
-        <b class="font-serif text-lg font-semibold text-neutral-500">Sitemap</b>
-        <a href="" class="block">Home</a>
-        <a href="" class="block">Menu</a>
-        <a href="" class="block">Location</a>
-        <a href="" class="block">Contact us</a>
-      </div>
-      <div class="flex flex-col gap-3">
-        <b class="font-serif text-lg font-semibold text-neutral-500">Socials</b>
-        <a href="" class="block">Facebook</a>
-        <a href="" class="block">Instagram</a>
+      <div class="flex flex-col justify-between gap-12 md:flex-row">
+        <div class="flex flex-col gap-3 text-right md:text-left">
+          <b class="font-serif text-lg font-semibold text-neutral-500">
+            Sitemap
+          </b>
+          <a href="" class="block">Home</a>
+          <a href="" class="block">Menu</a>
+          <a href="" class="block">Location</a>
+          <a href="" class="block">Contact us</a>
+        </div>
+        <div class="flex flex-col gap-3 text-right md:text-left">
+          <b class="font-serif text-lg font-semibold text-neutral-500">
+            Socials
+          </b>
+          <a href="" class="block">Facebook</a>
+          <a href="" class="block">Instagram</a>
+        </div>
       </div>
       <svg
-        class="absolute -bottom-24 -right-24 h-[110%] stroke-neutral-500 [mask-image:linear-gradient(-45deg,red,transparent)]"
+        class="absolute -bottom-32 -right-48 h-[110%] stroke-neutral-400 [mask-image:linear-gradient(-45deg,red,transparent)] md:-bottom-24 md:-right-24 md:stroke-neutral-500"
         viewBox="0 0 669 669"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
