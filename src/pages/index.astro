@@ -1,31 +1,56 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Teamania.">
-	<section class="w-full mx-auto min-h-[70vh] gap-4 bg-gradient-to-r from-[#A78DA9] to-[#9AB294] grid place-items-center">
-		<h1 class="text-4xl font-bold text-white">Welcome To Teamania</h1>
-		<h1 class="text-black/50">TODO: beeg cool image/video on autoplay in the background here</h1>
-	</section>
-	<section class="max-w-[1024px] mx-auto min-h-[50vh] flex flex-col items-center gap-4">
-		<h1 class="text-2xl font-serif text-center">Menu</h1>
-		<div class="grid grid-cols-4 gap-1 rounded-3xl w-full p-1 border border-neutral-300">
-			<div class="bg-neutral-200 text-center px-4 py-1 rounded-lg rounded-l-3xl">Poke</div>
-			<button class="duration-300 hover:bg-neutral-100 text-center px-4 py-1 rounded-lg">Drink</button>
-			<button class="duration-300 hover:bg-neutral-100 text-center px-4 py-1 rounded-lg">Desert & Cake</button>
-			<button class="duration-300 hover:bg-neutral-100 text-center px-4 py-1 rounded-lg rounded-r-3xl">Pastry & Cookies</button>
-		</div>
-		<div class="w-full h-96 bg-gradient-to-b from-neutral-100 to-white border border-neutral-200 rounded-3xl p-4">
-			mmm yummy food so good
-		</div>
-	</section>
-	<section class="max-w-[1024px] mx-auto min-h-[50vh] flex flex-col items-center gap-4">
-		<h1 class="text-2xl font-serif text-center">Location</h1>
-		<div class="w-full h-96 bg-neutral-200 rounded-3xl"></div>
-	</section>
+<Layout title="Teamania, Sweeten Your Life">
+  <section
+    class="mx-auto grid min-h-[70vh] w-full place-items-center gap-4 bg-gradient-to-r from-[#A78DA9] to-[#9AB294]"
+  >
+    <h1 class="text-4xl font-bold text-white">Welcome To Teamania</h1>
+    <h1 class="text-black/50">
+      TODO: beeg cool image/video on autoplay in the background here
+    </h1>
+  </section>
+  <section
+    class="mx-auto flex min-h-[50vh] max-w-[1024px] flex-col items-center gap-4"
+  >
+    <h1 class="text-center font-serif text-2xl">Menu</h1>
+    <div
+      class="grid w-full grid-cols-4 gap-1 rounded-3xl border border-neutral-300 p-1"
+    >
+      <div
+        class="rounded-lg rounded-l-3xl bg-neutral-200 px-4 py-1 text-center"
+      >
+        Poke
+      </div>
+      <button
+        class="rounded-lg px-4 py-1 text-center duration-300 hover:bg-neutral-100"
+        >Drink</button
+      >
+      <button
+        class="rounded-lg px-4 py-1 text-center duration-300 hover:bg-neutral-100"
+        >Desert & Cake</button
+      >
+      <button
+        class="rounded-lg rounded-r-3xl px-4 py-1 text-center duration-300 hover:bg-neutral-100"
+        >Pastry & Cookies</button
+      >
+    </div>
+    <div
+      class="h-96 w-full rounded-3xl border border-neutral-200 bg-gradient-to-b from-neutral-100 to-white p-4"
+    >
+      mmm yummy food so good
+    </div>
+  </section>
+  <section
+    class="mx-auto flex min-h-[50vh] max-w-[1024px] flex-col items-center gap-4"
+  >
+    <h1 class="text-center font-serif text-2xl">Location</h1>
+    <div class="h-96 w-full rounded-3xl bg-neutral-200"></div>
+  </section>
 </Layout>
 
 <style>
-/* NOTE: scoped to this file only */
+  /* NOTE: scoped to this file only */
 </style>
